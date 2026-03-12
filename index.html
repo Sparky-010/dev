@@ -167,11 +167,11 @@
                 <h2 class="text-center font-bold text-[#800080] text-4xl mb-5">Portfolio</h2>
 
                 <ul class="flex gap-1.5 items-center md:gap-5 justify-center md:font-semibold">
-                    <li><button type="button" class="bg-[#800080] text-[#e6d8f6]" id="allProj">All</button></li>
-                    <li><buttontype="button" id="RD"><span class="max-sm:hidden">Responsive </span><span class="md:hidden">R_</span>Design</button></li>
+                    <li><button type="button" class="bg-[#9e7bc0] text-[#e6d8f6]" id="allProj">All</button></li>
+                    <li><button type="button" id="RD"><span class="max-sm:hidden">Responsive </span><span class="md:hidden">R_</span>Design</button></li>
                     <li><button type="button" id="JS">JavaScript</button></li>
                     <li>
-                        <button type="button" id="JS" class="bg-[#800080] text-[#e6d8f6]">
+                        <button type="button" id="JS" class="bg-[#9e7bc0] text-[#e6d8f6]">
                         <a href="https://github.com/Sparky-010?tab=repositories" target="_blank" rel="noopener noreferrer">Others</a>
                         </button>
                     </li>
@@ -303,22 +303,22 @@
             js.classList.remove('hidden')
             RD.style.background = ''; RD.style.color = ''
             JS.style.background = ''; JS.style.color = ''
-            allProj.classList.add('bg-[#800080]', 'text-[#e6d8f6]')
+            allProj.classList.add('bg-[#9e7bc0]', 'text-[#e6d8f6]')
         })
 
         RD.addEventListener('click', R=>{
             rd.classList.remove('hidden')
             js.classList.add('hidden')
-            RD.style.background = '#800080'; RD.style.color = '#e6d8f6'
+            RD.style.background = '#9e7bc0'; RD.style.color = '#e6d8f6'
             JS.style.background = ''; JS.style.color = ''
-            allProj.classList.remove('bg-[#800080]', 'text-[#e6d8f6]')
+            allProj.classList.remove('bg-[#9e7bc0]', 'text-[#e6d8f6]')
         })
         JS.addEventListener('click', R=>{
             rd.classList.add('hidden')
             js.classList.remove('hidden')
-            JS.style.background = '#800080'; JS.style.color = '#e6d8f6'
+            JS.style.background = '#9e7bc0'; JS.style.color = '#e6d8f6'
             RD.style.background = ''; RD.style.color = ''
-            allProj.classList.remove('bg-[#800080]', 'text-[#e6d8f6]')
+            allProj.classList.remove('bg-[#9e7bc0]', 'text-[#e6d8f6]')
         })
     </script>
 </body>

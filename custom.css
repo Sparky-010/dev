@@ -117,12 +117,12 @@
     padding: 4px 10px;
     font-size: larger;
     font-weight: 700;
-    border: 1.5px solid var(---main-clr);
+    border: 1.5px solid #9e7bc0;
     cursor: pointer;
 }
 .portfolio ul li button:hover{
-    background: var(---main-clr);
-    color: #e6d8f6;
+    background: #9e7bc0;
+    color: #cfc2de;
 }
 
 /*------------------------------------------------------------- feedback -------------------------------------------------------------*/
