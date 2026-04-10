@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./home i.jpg" type="image/x-icon" sizes="96x96" />
+    <link rel="stylesheet" href="./custom.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>NDEMBEZE | PORTFOLIO</title>
+    <!-- email js head script -->
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script> -->
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          // publicKey: "cJpIA7gq4ZE47H5vU",
+        });
+      })();
+    </script>
+    <style>
+      ::-webkit-scrollbar {display: none;}
+    </style>
+  </head>
+
+  <body class="font-semibold overflow-x-hidden">
+    <!------------------------------------------- navigaton menu ------------------------------------------->
+    <header class="z-[99] md:flex items-center justify-between py-2 md:px-2.5 capitalize sticky top-0 bg-purple-300">
+      <nav class="flex justify-between items-center max-sm:px-2.5">
+        <div class="flex items-center gap-1.5 text-[1.35rem]">
+          <span class="bg-[var(---main-clr)] rounded-[7px] text-purple-300 font-bold py-0 px-2 text-2xl" >N</span >
+          <b>NDEMBEZE</b>
+        </div>
+
+        <button type="button" class="font-bold text-2xl cursor-pointer pt- md:hidden" id="menu" >
+          <img src="./menu.webp" alt="" width="40" />
+        </button>
+      </nav>
+      <div class="max-sm:border-t max-sm:absolute max-sm:bg-purple-200 max-sm:w-full max-sm:mt-[-420px] max-sm:overflow-y-hidden z-0" id="drop">
+        <ul
+          class="flex gap-5 max-sm:text-[1.2rem] max-sm:leading-[2] font-bold max-sm:block max-sm:w-full transition duration-200 ease-in-out">
+          <li><a href="#" class="font-bold" onclick="closeMenu()">home</a></li>
+          <li>
+            <a href="#services" class="font-bold" onclick="closeMenu()">Services</a>
+          </li>
+          <li>
+            <a href="#experience" class="font-bold" onclick="closeMenu()">Experience</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="font-bold" onclick="closeMenu()">Portfolio</a>
+          </li>
+          <li><a href="#feedback" onclick="closeMenu()">Testimonials</a></li>
+          <li class="md:hidden font-bold">
+            <a href="#contact" onclick="closeMenu()" class="px-2 py-1 font-bold bg-blue-500 text-white hover:bg-blue-400">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <span class="max-sm:hidden font-bold">
+        <a href="#contact" class="px-4 py-1 content-center rounded-[1.5rem] text-[1.3rem] font-bold md:bg-blue-500 text-white transition duration-300 ease-in-out md:hover:bg-blue-400">contact</a>
+      </span>
+    </header>
+
+    <main class="font-semibold" onclick="closeMenu()">
+      <!------------------------------------------- Hero ------------------------------------------->
+      <section class="hero md:h-[90vh] grid gap-5 p-5 max-sm:px-6 max-sm:pb-[30px] md:px-20 leading-8 bg-purple-100">
+        <div class="hero-desc max-sm:w-full">
+          <h2 class="font-bold text-2xl py-2">Hi, I am</h2>
+          <h1 class="font-bold lg:text-5xl py-2">
+            Ndembeze<span class="text-purple-700 text-shadow-2xs text-shadow-purple-900"> Kangmoh.</span>
+          </h1>
+          <p class="text-gray-600 text-[1.3rem] font-semibold">
+            I am a <span class="text-purple-700 font-bold">Junior Web Developer</span> and a <b>Digital Marketing student</b> passionate about crafting clean responsive websites. I bring hands-on with
+            <span class="text-purple-700 font-bold">Front-End<!--, Full-Stack-->
+              Web Development</span> experience.
+          </p>
+          <ul class="cnt-btn follow flex gap-5 my-6 justify-self-center">
+            <a href="https://github.com/Sparky-010?tab=repositories" target="_blank">
+			  <img src="./git.png" alt="" width="30px"/>
+			</a>
+            <a href="" target="_blank">
+				<img src="./facebook.png" alt="" width="30px"/>
+			</a>
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank">
+			  <img src="./linkedin.png" alt="" width="30px" class="rounded-full"/></a>
+            <a href="https://devchallenges.io/profile/88c5cbd6-82ff-4c1b-94ba-105fdde53649" target="_blank">
+			  <img src="./favicon.ico" alt="devChallenges" width="30px" class="rounded-full"/></a>
+          </ul>
+          <ul class="hero-btn flex gap-5 font-bold justify-self-center">
+            <li class="get-in-touch text-[#fff] no-wrap">
+              <a href="#contact">Get in touch</a>
+            </li>
+            <li class="hover:bg-[#800080] hover:shadow-[0 0 12px] shadow-[#800080] hover:text-white no-wrap">
+              <a href="#portfolio">View my work</a>
+            </li>
+          </ul>
+        </div>
+		<div class="hero-img">
+			<img src="./home i.jpg" alt="logo" width="500px" class="rounded-[50px] border shadow-2xl hover:shadow-[#800080] h-[500px]"/>
+        </div>
+      </section>
+      <!------------------------------------------- services ------------------------------------------->
+
+      <section class="service w-full text-center pt-20 md:p-5 p-2 bg-purple-50 justify-items-center" id="services">
+        <br class="max-sm:hidden" />
+        <h1 class="mb-4 font-bold text-4xl">Services</h1>
+        <br />
+        <div class="flex flex-wrap gap-8 md:min-w-[300px] mx-auto">
+          <div class="services mb-7 lg:mb-0 mx-auto rounded-2xl p-5 bg-purple-100">
+            <h2 class="font-bold text-[#00f] text-2xl">Front-End Development</h2>
+            <div class="p-0.5 text-[1.2rem]">
+              <p>
+                I build clean, responsive interfaces using HTML5, CSS3 and
+                JavaScript. I create interactive, accessible pages with
+                frameworks like tailwindcss ensuring a smooth user interface
+                across all devices.
+              </p>
+              <div class="md:p-5 flex gap-5 justify-center mb-4">
+                <img src="./html.png" alt="" width="70" height="40" />
+                <img src="./tailwindcss.png" alt="" width="150" height="40" />
+                <img src="./js.webp" alt="" width="70" height="40" />
+              </div>
+              <!-- <p>
+                  <br>I use web hosting platforms like;<b> 
+                  <a href="http://tiiny.host" target="_blank" class="text-blue-400 hover:underline">Tiiny,</a> 
+                  <a href="http://github.com" target="_blank" class="text-blue-400 hover:underline">Github Pages</a></b>
+              </p> -->
+            </div>
+          </div>
+          <!-- <div class="services mb-7 lg:mb-0  mx-auto rounded-2xl p-5 bg-purple-100">
+                    <h2 class="font-bold text-[#00f] text-2xl">MySQL Database</h2>
+                    <div>
+                        <div class="flex justify-center">
+                            <img src="./mysql.png" alt="" width="75">
+                        </div>
+                        <p>I design and manage relational Databases in MySQL, crafting efficient schemas, indexes and
+                            queries for reliable data handling. I focus on optimized retrieval to support dynamic data
+                            queries.
+                        </p>
+                    </div>
+                </div> -->
+          <!-- <div class="services lg:w-[70%] rounded-2xl p-5 bg-purple-100 col-span-3 mx-auto">
+                    <h2 class="font-bold text-[#00f] text-2xl">Full-Stack Development</h2>
+                    <div class="p-5 pt-0">
+                        <div class="md:flex gap-5 justify-center px-5" style="align-items: center;">
+                            <h2 class="flex gap-5 justify-center text-[#00f] text-[1rem] font-semibold">Front-End</h2>
+                            <span class="font-bold text-3xl text-purple-500">+</span><br class="md:hidden">
+                            <h2 class="flex gap-1.5 items-center justify-center text-[#00f] text-[1rem] font-semibold">MySQL + <img src="./php.png" alt="" width="50"></h2>
+                        </div>
+                        <p>
+                            I deliver end-to-end solutions, handling <b>client-side</b> with HTML5, CSS3, tailwindcss and JavaScript and the <b>Sever-side</b> with PHP and MySQL as the Database layer.
+                            <br>I use web hosting platforms like;<b> <a href="http://infinityfree.net" target="_blank" class="text-blue-400 hover:underline">Infinityfree</a></b>
+                        <p>
+                    </div>
+                </div> -->
+        </div>
+      </section>
+      <!------------------------------------------- Experience ------------------------------------------->
+      <section class="pt-10 bg-purple-100" id="experience">
+        <h1 class="font-extrabold text-center text-3xl my-5 mb-2.5">
+          Experience
+        </h1>
+        <section class="md:flex gap-9 md:px-6 justify-center">
+          <div
+            class="py-5 max-sm:w-full grow mx-auto text-center justify-items-center rounded-2xl shadow shadow-purple-300"
+          >
+            <h2 class="font-bold text-[1.4rem] mb-5">Certicates</h2>
+            <div class="w-full flex flex-wrap gap-5">
+              <div
+                class="relative text-center pb-2 mx-auto rounded-2xl shadow shadow-purple-300 hover:shadow-2xl hover:shadow-purple-400"
+              >
+                <div id="certi-imgs"></div>
+                <h4 class="text-[1.2rem] font-bold" id="certi-titles"></h4>
+                <button type="button" class="absolute hidden top-[40%] left-2.5 bg-gray-600 font-semibold py-1 px-1 rounded-[5px] text-2xl" id="prevCerti">
+                  <img src="./next.png" alt="" width="30" class="rotate-180" />
+                </button>
+                <button type="button" class="absolute hidden cursor-pointer top-[40%] right-2.5 bg-purple-600 font-semibold py-1 px-1 rounded-[5px] text-2xl" id="nextCerti">
+                  <img src="./next.png" alt="" width="30" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gap-11 grow p-5 mx-auto rounded-2xl shadow shadow-purple-300 transition duration-300 ease-in-out hover:shadow-2xl"
+          >
+            <h2 class="max-sm:text-center font-bold text-[1.4rem] mb-5">
+              Experience Level and <br />Completed Projects
+            </h2>
+            <div class="pl-9 flex gap-5">
+              <div class="exp-lv">5+</div>
+              <div class="">
+                <span class="text-[.9rem]">Months</span><br />
+                <span class="exp text-[.9rem] mt-[-5px] inline-block"
+                  >Experience</span
+                >
+              </div>
+            </div>
+            <div class="pl-9 flex gap-5 mt-6">
+              <div class="exp-lv">8+</div>
+              <div class="">
+                <span class="text-[.9rem]">Completed</span><br />
+                <span class="exp text-[.9rem] mt-[-5px] inline-block"
+                  >Projects on devChallenges</span
+                >
+              </div>
+            </div>
+            <div class="pl-9 flex gap-5 mt-6">
+              <div class="exp-lv">2+</div>
+              <div class="">
+                <span class="text-[.9rem]">Completed</span><br />
+                <span class="exp text-[.9rem] mt-[-5px] inline-block"
+                  >Real Project</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <br /><br />
+      </section>
+
+      <!------------------------------------------- Portfolio ------------------------------------------->
+      <section class="pt-20 bg-purple-50 mx-auto justify-items-center" id="portfolio">
+        <div class="portfolio">
+          <h1 class="text-center font-bold text-4xl">Recent Projects</h1>
+          <h2 class="text-center font-bold text-[#800080] text-3xl mb-5">Portfolio</h2>
+
+		  <!-- buttons -->
+          <ul class="flex gap-1.5 max-sm:w-[90%] pl-6 mx-auto items-center md:gap-5 justify-center md:font-semibold overflow-x-scroll">
+            <li>
+              <button type="button" class="bg-[#9e7bc0] text-white" id="allProj">
+                All
+              </button>
+            </li>
+            <li>
+              <button type="button" class="no-wrap" id="RD">
+                Responsive<span class="text-purple-50">_</span>Design
+              </button>
+            </li>
+            <li><button type="button" id="JS">JavaScript</button></li>
+            <li>
+              <button type="button" id="JS" class="bg-[#9e7bc0] text-[#fff]">
+                <a href="https://github.com/Sparky-010?tab=repositories" target="_blank" rel="noopener noreferrer">Others</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+		<!-- Responsive design-->
+        <br /><br class="max-sm:hidden" />
+        <div class="w-[90%] mx-auto flex flex-wrap items-center justify-center gap-5 pb-5" id="rd">
+			<h1 class="border rounded-[7px] px-4 py-2">Responsive Design Projects not uploaded</h1>
+          <!-- <div class="projects max-sm:mb-5 rounded-2xl">
+            <img src="./sub-check.jpg" class="w-full h-full rounded-t-2xl" alt=""/>
+            <div class="flex items-center px-2.5 pt-2 justify-between">
+              <a href="#" target="_blank" rel="noopener noreferrer">see project↗</a>
+              <span class="text-gray-400">Responsive Design</span>
+            </div>
+            <p class="mx-2.5 text-gray-400">
+              Subscription checkout, project from <b>devChallenges</b>
+            </p>
+          </div>
+          <div class="projects max-sm:mb-5 rounded-2xl">
+            <img
+              src="./device-checkout.jpg"
+              class="w-full h-full rounded-t-2xl"
+              alt=""
+            />
+            <div class="flex items-center px-2.5 pt-2 justify-between">
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >see project↗</a
+              >
+              <span class="text-gray-400">Responsive Design</span>
+            </div>
+            <p class="mx-2.5 text-gray-400">
+              Device Checkout, project from <b>devChallenges</b>
+            </p>
+          </div> 
+          <div class="projects max-sm:hidden max-sm:mb-5 rounded-2xl">
+            <img src="./sub-check.jpg" class="w-full h-full rounded-t-2xl" alt=""/>
+            <div class="flex items-center px-2.5 pt-2 justify-between">
+              <a href="#" target="_blank" rel="noopener noreferrer">see project↗</a>
+              <span class="text-gray-400">Responsive Design</span>
+            </div>
+            <p class="mx-2.5 text-gray-400">
+              Subscription checkout, project from <b>devChallenges</b>
+            </p>
+          </div>-->
+        </div>
+
+		<!-- javascript -->
+        <div class="w-[90%] mx-auto flex flex-wrap items-center justify-center gap-5 pb-5" id="js">
+          <div class="projects max-sm:mb-5 rounded-2xl">
+            <img src="./timeCalendar.png" class="w-full h-full rounded-t-2xl" alt=""/>
+            <div class="flex items-center px-2.5 pt-2 justify-between">
+              <a href="https://ndev.page.gd/mmuock/" target="_blank" rel="noopener noreferrer">see project↗</a>
+              <span class="text-gray-400">JavaScript</span>
+            </div>
+            <p class="mx-2.5 text-gray-400">
+              Mmuock Time and Calendar website, from <b>Ndembeze</b>
+            </p>
+          </div>
+        </div>
+        <br /><br class="max-sm:hidden" /><br class="max-sm:hidden" />
+      </section>
+
+      <!-------------------------------------------------Testimonials------------------------------------------------->
+      <section
+        class="w-[100%] pt-[100px] md:pt-[150px] mx-auto bg-purple-100 shadow-[#fff]"
+        id="feedback"
+      >
+        <h2 class="text-center font-bold text-4xl mb-10">Testimonials</h2>
+        <div class="p-5 lg:px-9 md:flex justify-evenly mx-auto">
+          <div class="feed max-sm:mb-5 mx-auto rounded-2xl border-2 p-5">
+            <div class="feed-user flex gap-3">
+              <img src="./images (1).jpeg" alt="" width="60" class="border-2" />
+              <h4>
+                Helena Joy ⭐⭐⭐⭐⭐<br /><span>Digital Entrepreneur</span>
+              </h4>
+            </div>
+            <p>
+              "It works great on phones and computers. People can easily find
+              the contact page and call me. The forms submit without errors, and
+              I get messages right away."
+            </p>
+          </div>
+
+          <div class="feed mx-auto rounded-2xl border-2 p-5">
+            <div class="feed-user flex gap-3">
+              <img src="./images (2).jpeg" alt="" width="60" class="border-2" />
+              <h4>Fasoh Paul ⭐⭐⭐⭐⭐<br /><span>Plumber</span></h4>
+            </div>
+            <p>
+              "I just wanted to say a big thank you for building my website. It
+              works perfectly on both mobile and desktop devices.
+            </p>
+          </div>
+        </div>
+        <br /><br />
+      </section>
+
+      <!------------------------------------- contact ------------------------------------->
+      <section id="contact" class="getInTouch pt-9 bg-purple-100">
+        <div class="md:mb-9">
+          <h1 class="text-4xl font-bold text-center">
+            Contact
+            <span
+              class="text-purple-700 mb-5 text-shadow-2xs text-shadow-purple-900"
+              >Me</span
+            >
+          </h1>
+        </div>
+        <form
+          action=""
+          method=""
+          class="w-full md:w-[80%] p-5 py-9 rounded-[8px] getInTouch mx-auto"
+        >
+          <fieldset class="md:w-[80%] md:flex justify-between gap-11 mx-auto">
+            <div class="w-full text-center md:text-right">
+              <input type="text" id="name" placeholder="Full Name" required />
+
+              <input
+                type="email"
+                id="email"
+                autocomplete="email"
+                placeholder="Email"
+                required
+              />
+
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+
+            <div class="w-full text-center md:w-[80%]">
+              <input
+                type="text"
+                id="name"
+                class="w-full"
+                placeholder="Subject"
+                required
+              />
+              <textarea
+                name="message"
+                id="msg"
+                class="block rounded-2xl w-full border mb-5 py-2.5 px-5"
+                class="border"
+                cols="30"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="send max-sm:w-full py-2 px-3 rounded-[7px] text-[#fff] text-2xl font-bold bg-[#00f]"
+                id="subBtn"
+              >
+                Send Message
+              </button>
+            </div>
+          </fieldset>
+        </form>
+        <br /><br class="max-sm:hidden" /><br class="max-sm:hidden" />
+      </section>
+    </main>
+
+    <!------------------------------------------- footer ------------------------------------------->
+    <footer class="footer bg-[#2a242f]" onclick="closeMenu()">
+      <ul class="foot">
+        <li>
+          <a href="#" class="flex items-center">
+			<span class="myL border-2 border-[var(---sdr-clr)] rounded-[50%] text-purple-400 text-[.95rem] font-bold py-1 px-2.5">N</span>
+		</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank" rel="noopener noreferrer">
+            <img src="./linkedin.png" alt="linkedin" class="rounded-2xl" width="30px"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://" target="_blank" rel="noopener noreferrer">
+            <img src="./facebook.png" alt="facbook" class="rounded-2xl" width="30px"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/+237677191715" target="_blank" rel="noopener noreferrer">
+            <img src="./whatsapp.png" alt="whatsapp" class="rounded-2xl" width="30px"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Sparky-010?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <img src="./git.png" alt="github" class="rounded-2xl" width="30px"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://devchallenges.io/profile/88c5cbd6-82ff-4c1b-94ba-105fdde53649" target="_blank" rel="noopener noreferrer">
+            <img src="./favicon.ico" alt="devChallenges" class="rounded-2xl" width="30px"/>
+          </a>
+        </li>
+        <li>
+			<a href="mailto:ndembezek@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img src="./gmail.png" alt="devChallenges" class="rounded-2xl" width="30px"/>
+			</a>
+        </li>
+      </ul>
+      <p class="text-[grey] font-semibold pb-5">
+        <!-- <i><b>A L300 Digital Marketing student</b> at the <b>University of Bamenda; Cameroon.</b></i>
+            <br> -->
+        <i>&copy; Ndembeze Kangmoh | All Rights Reserved <span id="date"></span></i>
+      </p>
+    </footer>
+    <script>
+      document.getElementById("date").innerText = new Date().getFullYear();
+      function menu() {
+        const menu = document.getElementById("menu");
+        const drop = document.getElementById("drop");
+        menu.addEventListener("click", () => {
+          drop.classList.toggle("max-sm:mt-[-420px]");
+          drop.classList.toggle("max-sm:overflow-y-hidden");
+        });
+      }
+      menu();
+      function closeMenu() {
+        const drop = document.getElementById("drop");
+        drop.classList.add("max-sm:mt-[-420px]");
+      }
+
+      function Certicates() {
+        const certificates = [
+          { img: "./certificate.png", title: "Responsive Design" },
+          { img: "", title: "" },
+          { img: "", title: "" },
+          { img: "", title: "" },
+        ];
+
+        const certiImgs = document.getElementById("certi-imgs");
+        const certiTitles = document.getElementById("certi-titles");
+        const nextCerti = document.getElementById("nextCerti");
+        const prevCerti = document.getElementById("prevCerti");
+
+        prevCerti.disabled = true;
+        prevCerti.style.cursor = "not-allowed";
+        certiImgs.innerHTML = `<img src="${certificates[0].img}" width="400" class="h-[300px]">`;
+        certiTitles.textContent = certificates[0].title;
+
+        let n = 0;
+        function nextCert() {
+          prevCerti.disabled = false;
+          prevCerti.style.cursor = "pointer";
+          prevCerti.classList.remove("bg-gray-600");
+          prevCerti.classList.add("bg-purple-600");
+          n++;
+          certiImgs.innerHTML = `<img src="${certificates[n].img}" width="400" class="h-[300px]">`;
+          certiTitles.textContent = certificates[n].title;
+          n === certificates.length - 1 ? (n = -1) : "";
+        }
+        nextCerti.addEventListener("click", nextCert);
+
+        function prevCert() {
+          n--;
+          n < 0 ? (n = certificates.length - 1) : "";
+          certiImgs.innerHTML = `<img src="${certificates[n].img}" width="400" class="h-[300px]">`;
+          certiTitles.textContent = certificates[n].title;
+        }
+        prevCerti.addEventListener("click", prevCert);
+      }
+      Certicates();
+
+      // Poerfolio
+      function portfolio() {
+        const allProj = document.getElementById("allProj");
+        const RD = document.getElementById("RD");
+        const JS = document.getElementById("JS");
+        const rd = document.getElementById("rd");
+        const js = document.getElementById("js");
+
+        allProj.addEventListener("click", (R) => {
+          rd.classList.remove("hidden");
+          js.classList.remove("hidden");
+          RD.style.background = "";
+          RD.style.color = "";
+          JS.style.background = "";
+          JS.style.color = "";
+          allProj.classList.add("bg-[#9e7bc0]", "text-white");
+        });
+
+        RD.addEventListener("click", (R) => {
+          rd.classList.remove("hidden");
+          js.classList.add("hidden");
+          RD.style.background = "#9e7bc0";
+          RD.style.color = "#fff";
+          JS.style.background = "";
+          JS.style.color = "";
+          allProj.classList.remove("bg-[#9e7bc0]", "text-white");
+        });
+        JS.addEventListener("click", (R) => {
+          rd.classList.add("hidden");
+          js.classList.remove("hidden");
+          JS.style.background = "#9e7bc0";
+          JS.style.color = "#fff";
+          RD.style.background = "";
+          RD.style.color = "";
+          allProj.classList.remove("bg-[#9e7bc0]", "text-white");
+        });
+      }
+      portfolio();
+      // TO BE REVIEWED
+      function sendMail() {
+        if (!navigator.onLine) {
+          alert("Please connect to the internet...");
+        } else {
+          const name = document.getElementById("name");
+          const email = document.getElementById("email");
+          const phone = document.getElementById("phone");
+          const msg = document.getElementById("msg");
+          const params = {
+            name: name.value,
+            email: email.value,
+            phone: phone.value,
+            msg: msg.value,
+          };
+
+          const serviceID = "service_2sl431x";
+          const templateID = "template_81dp8at";
+          emailjs
+            .send(serviceID, templateID, params)
+            .then((result) => {
+              console.log(result);
+              alert(
+                "Your email has been sent. You will only recieve emails about update on this site.",
+              );
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+        }
+      }
+      document.getElementById("subBtn").addEventListener("click", sendMail);
+    </script>
+  </body>
+</html>
