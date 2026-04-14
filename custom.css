@@ -1,5 +1,5 @@
 *{transition: all 200ms ease-in-out;}
-
+html{scroll-behavior: smooth;}
 :root{
     ---main-clr: #800080;
     ---sdr-clr: #6666e2;
