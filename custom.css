@@ -5,6 +5,8 @@ html{scroll-behavior: smooth;}
     ---sdr-clr: #6666e2;
 }
 
+body{overflow-x: hidden;}
+
 /* ------------nav---------- */
 header ul li > a:hover{color: #fff;border-bottom: 1px solid black;}
 header ul li a{font-size: 1.3rem;}
@@ -125,6 +127,7 @@ form input{
 .foot{
     display: flex;
     gap: 20px;
+    align-items: center;
     justify-content: center;
     padding: 25px;
 }
@@ -172,5 +175,5 @@ form input, form textarea{border: 4px solid var(---main-clr);}
         font-weight: 700;
     }
     .feed{width: 100%;}
-    .footer img{width: 40px;}
+    /* .footer img{width: 50px;} */
 }
