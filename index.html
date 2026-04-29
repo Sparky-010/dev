@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css" />
    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-   <script type="text/javascript"
+   <!-- <script type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
    </script>
    <script type="text/javascript">
@@ -19,7 +19,7 @@
             publicKey: "cJpIA7gq4ZE47H5vU",
          });
       })();
-   </script>
+   </script> -->
   </head>
 
   <body class="font-sans overflow-x-hidden text-[var(--txt)] bg-[var(--bg)]">
@@ -51,11 +51,11 @@
             <li><a href="#experience" class="font-bold">Experience</a></li>
             <li><a href="#portfolio" class="font-bold">Portfolio</a></li>
             <li><a href="#feedback">Testimonials</a></li>
-            <a href="#contact" class="inline-block w-full px-5 bg-[var(--pry)] min-[650px]:hidden font-bold py-1 border border-[var(--sec)] text-[var(--light-txt)] hover:bg-[var(--pry)]" onclick="closeMenu()">Contact</a>
+            <a href="mailto:ndembezek@gmail.com" class="inline-block w-full px-5 bg-[var(--pry)] min-[650px]:hidden font-bold py-1 border border-[var(--sec)] text-[var(--light-txt)] hover:bg-[var(--pry)]" onclick="closeMenu()">Contact</a>
          </ul>
       </div>
       <span class="max-sm:hidden font-bold">
-        <a href="#contact" class="px-4 py-1 content-center rounded-[1.5rem] text-[1.3rem] font-bold border border-[var(--sec)] text-[var(--light-txt)] bg-[var(--pry)]">contact</a>
+        <a href="mailto:ndembezek@gmail.com" class="px-4 py-1 content-center rounded-[1.5rem] text-[1.3rem] font-bold border border-[var(--sec)] text-[var(--light-txt)] bg-[var(--pry)]">contact</a>
       </span>
     </header>
 
@@ -70,7 +70,7 @@
           </h1>
 
           <p class="text-[1rem] font-semibold">
-            I am a <span class="text-[var(--pry)] font-bold">Junior Web Developer</span><!--and a <b>Digital Marketing student</b>--> passionate about crafting clean responsive websites. I bring hands-on with <span class="text-[var(--pry)] font-bold">Frontend<!--, Full-Stack--> Web Development</span> experience.
+            I am a <span class="text-[var(--pry)] font-bold"> Web Developer</span><!--and a <b>Digital Marketing student</b>--> passionate about crafting clean responsive websites. I bring hands-on with <span class="text-[var(--pry)] font-bold">Frontend<!--, Full-Stack--> Web Development</span> experience.
           </p>
          <div class="cnt-btn follow flex gap-5 my-6 justify-self-center">
             <a href="https://github.com/Sparky-010?tab=repositories" target="_blank">
@@ -88,7 +88,7 @@
          </div>
           <ul class="hero-btn flex gap-5 font-bold justify-self-center">
             <li class="get-in-touch text-[#fff] no-wrap">
-              <a href="#contact">Get in touch</a>
+              <a href="mailto:ndembezek@gmail.com">Get in touch</a>
             </li>
             <li class="hover:bg-[var(--pry)] hover:shadow-[0 0 12px] shadow-[var(--pry)] hover:text-[var(--light-txt)] no-wrap">
               <a href="#portfolio">View my work</a>
@@ -96,8 +96,8 @@
           </ul>
         </div>
 
-		<div class="w-full justify-items-center">
-			<img src="./profile.jpg" alt="logo" width="600" class="shadow-2xl h-[390px min-[650px]:h-[510px]"/>
+        <div class="w-full justify-items-center">
+          <img src="./profile.jpg" alt="logo" width="600" class="shadow-2xl h-[390px min-[650px]:h-[510px]"/>
         </div>
       </section>
 
@@ -111,11 +111,12 @@
             <h2 class="font-bold text-[var(--pry)] text-2xl">Frontend Development</h2>
             <div class="p-0.5 text-[1rem]">
               <p>
-                I build clean, responsive interfaces using HTML5, CSS3 and
+                Responsive interfaces using HTML5, CSS3 and
                 JavaScript. I create interactive, accessible pages with
                 frameworks like tailwindcss ensuring a smooth user interface
                 across all devices.
               </p>
+
               <div class="min-[650px]:p-5 flex gap-5 justify-center mb-4">
                 <img src="./html.png" alt="" width="70" height="40" />
                 <img src="./tailwindcss.png" alt="" width="150" height="40" />
@@ -309,7 +310,21 @@
         <br /><br />
       </section>
 
-      <!------------------------------------- contact ------------------------------------->
+      <!----------------------------------------futher studies--------------------------->
+      <section class="w-[100%] mx-auto bg-gray-700 shadow-[#fff]">
+        <h2 class="text-center font-bold text-2xl text-gray-300 pt-9">Studies</h2>
+        <p class="text-center text-[0.9rem] text-gray-800 font-semibold">I am currently studying and improving my skills on the following tools.<br> With a vision of being a Fullstack Developer.</p>
+        <div class="p-5 w-fit flex justify-center gap-5 items-center mx-auto">
+          <!-- <img src="./react" alt=""> -->
+          <img src="./php.png" alt="" width="50" class="border border-[var(--pry)] rounded-full p-1 bg-[var(--bg)]">
+          <img src="./mysql.png" alt="" width="50" class="border border-[var(--pry)] rounded-full p-1 bg-[var(--bg)]">
+          <img src="./wordpress.png" alt="" width="40" class="border border-[var(--pry)] rounded-full p-1 bg-[var(--bg)]">
+          </div>
+        </div>
+        <br /><br />
+      </section>
+
+      <!------------------------------------- contact -------------------------------------
       <section id="contact" class="getInTouch pt-9 ">
         <div class="min-[650px]:mb-9">
           <h1 class="text-4xl font-bold text-center">
@@ -337,7 +352,7 @@
           </fieldset>
         </form>
         <br /><br class="max-sm:hidden" /><br class="max-sm:hidden" />
-      </section>
+      </section> -->
     </main>
 
     <!------------------------------------------- footer ------------------------------------------->

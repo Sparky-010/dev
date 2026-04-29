@@ -185,4 +185,4 @@ function sendMail() {
       Message('red','Please connect to the internet.')
    }
 }
-document.getElementById("subBtn").addEventListener("click", sendMail);
+// document.getElementById("subBtn").addEventListener("click", sendMail);
