@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./profile.jpg" type="image/x-icon" sizes="96x96" />
+    <title>NDEMBEZE | PORTFOLIO</title>
+
+    <link rel="stylesheet" href="./custom.css" />
+    <link rel="stylesheet" href="./style.css" />
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+   <!-- <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+      (function () {
+         emailjs.init({
+            publicKey: "cJpIA7gq4ZE47H5vU",
+         });
+      })();
+   </script> -->
+  </head>
+
+  <body class="font-sans overflow-x-hidden text-[var(--txt)] bg-[var(--bg)]">
+   <div class="w-full fixed -top-13 items-center justify-items-center" id="msg-div">
+      <p class="w-fit px-5 py-3 rounded-[10px] border bg-[var(--bg)]" id="msg"></p>
+   </div>
+    <!------------------------------------------- navigaton menu ------------------------------------------->
+    <header class="z-50 min-[650px]:flex font-semibold items-center justify-between max-sm:pt-4 p-2 min-[650px]:px-9 capitalize sticky top-0 ">
+      <nav class="flex justify-between items-center max-sm:px-2.5">
+        <div class="flex items-center gap-4 text-[1.35rem]">
+          <b>NDEMBEZE</b>
+
+          <button type="button" class="flex gap-1 cursor-pointer rounded-full border border-[var(--txt)] bg-[var(--bg)]" id="theme">
+            <img src="./Moon_fill.svg" alt="">
+            <img src="./Moon_fill_light.svg" alt="" class="hidden rounded-full">
+            <img src="./Sun_fill.svg" alt="" class="rounded-full border border-[var(--txt)]">
+          </button>
+        </div>
+
+        <button type="button" class="font-bold text-2xl cursor-pointer rounded-full bg-[var(--bg)] min-[650px]:hidden" id="menu" >
+          <img src="./menu.webp" alt="" width="40" />
+        </button>
+      </nav>
+
+      <div class="max-sm:border-t max-sm:absolute max-sm:bg-[var(--bg)] max-sm:w-full max-sm:mt-[-420px] max-sm:overflow-y-hidden z-0" id="drop">
+         <ul class="flex gap-5 max-sm:text-[1.4rem] max-sm:leading-[2] font-bold max-sm:block max-sm:w-full" id="navs">
+            <li><a href="#" class="font-bold border-b-2">home</a></li>
+            <li><a href="#services" class="font-bold">Services</a></li>
+            <li><a href="#experience" class="font-bold">Experience</a></li>
+            <li><a href="#portfolio" class="font-bold">Portfolio</a></li>
+            <li><a href="#feedback">Testimonials</a></li>
+            <a href="mailto:ndembezek@gmail.com" class="inline-block w-full px-5 bg-[var(--pry)] min-[650px]:hidden font-bold py-1 border border-[var(--sec)] text-[var(--light-txt)] hover:bg-[var(--pry)]" onclick="closeMenu()">Contact</a>
+         </ul>
+      </div>
+      <span class="max-sm:hidden font-bold">
+        <a href="mailto:ndembezek@gmail.com" class="px-4 py-1 content-center rounded-[1.5rem] text-[1.3rem] font-bold border border-[var(--sec)] text-[var(--light-txt)] bg-[var(--pry)]">contact</a>
+      </span>
+    </header>
+
+    <main class="font-semibold " onclick="closeMenu()">
+
+      <!------------------------------------------- Hero ------------------------------------------->
+      <section class="hero min-[650px]:h-[90vh] grid min-[650px]:gap-10 p-5 pt-9 max-sm:px-6 max-sm:pb-[30px] min-[650px]:px-9 leading-8 ">
+        <div class="hero-desc max-sm:w-full">
+          <h2 class="font-bold text-2xl max-sm:pt-10 py-2">Hi, I am</h2>
+          <h1 class="font-bold lg:text-5xl py-2"> Ndembeze
+            <span class="text-[var(--pry)] text-shadow-2xs text-shadow-purple-900"> Kangmoh.</span>
+          </h1>
+
+          <p class="text-[1rem] font-semibold">
+            I am a <span class="text-[var(--pry)] font-bold"> Web Developer</span><!--and a <b>Digital Marketing student</b>--> passionate about crafting clean responsive websites. I bring hands-on with <span class="text-[var(--pry)] font-bold">Frontend<!--, Full-Stack--> Web Development</span> experience.
+          </p>
+         <div class="cnt-btn follow flex gap-5 my-6 justify-self-center">
+            <a href="https://github.com/Sparky-010?tab=repositories" target="_blank">
+               <img src="./git.png" alt="" width="35"/>
+            </a>
+            <a href="#" target="_blank">
+               <img src="./facebook.png" alt="" width="35"/>
+            </a>
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank">
+               <img src="./linkedin.png" alt="" width="35" class="rounded-full"/>
+            </a>
+            <a href="https://devchallenges.io/profile/88c5cbd6-82ff-4c1b-94ba-105fdde53649" target="_blank">
+               <img src="./favicon.ico" alt="devChallenges" width="35" class="rounded-full"/>
+            </a>
+         </div>
+          <ul class="hero-btn flex gap-5 font-bold justify-self-center">
+            <li class="get-in-touch text-[#fff] no-wrap">
+              <a href="mailto:ndembezek@gmail.com">Get in touch</a>
+            </li>
+            <li class="hover:bg-[var(--pry)] hover:shadow-[0 0 12px] shadow-[var(--pry)] hover:text-[var(--light-txt)] no-wrap">
+              <a href="#portfolio">View my work</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w-full justify-items-center">
+          <img src="./profile.jpg" alt="logo" width="600" class="shadow-2xl h-[390px min-[650px]:h-[510px]"/>
+        </div>
+      </section>
+
+      <!------------------------------------------- services ------------------------------------------->
+      <section class="service w-full text-center my-[100px] min-[650px]:p-5 p-2 justify-items-center" id="services">
+        <br class="max-sm:hidden" />
+        <h1 class="mb-4 font-bold text-4xl">Services</h1>
+        <br />
+        <div class="flex flex-wrap gap-8 min-[650px]:min-w-[300px] mx-auto">
+          
+          <div class="services mb-7 lg:mb-0 mx-auto rounded-2xl p-5 ">
+            <h2 class="font-bold text-[var(--pry)] text-2xl">Frontend Development</h2>
+            <p class="p-0.5 text-[1rem]">
+              Responsive interfaces using HTML5, CSS3 and
+              JavaScript. I create interactive, accessible pages with
+              frameworks like tailwindcss ensuring a smooth user interface
+              across all devices.
+            </p>
+          </div>
+
+          <!-- <div class="services mb-7 lg:mb-0 mx-auto rounded-2xl p-5 ">
+            <h2 class="font-bold text-[var(--pry)] text-2xl">Structured Language Database Managent</h2>
+            <p class="p-0.5 text-[1rem]">
+              Manage Structured Language Databases Such as MySQL. 
+            </p>
+          </div>
+
+          <div class="services mb-7 lg:mb-0 mx-auto rounded-2xl p-5 ">
+            <h2 class="font-bold text-[var(--pry)] text-2xl">Backend Development</h2>
+            <p class="p-0.5 text-[1rem]">
+              Responsive interfaces using HTML5, CSS3 and
+              JavaScript. I create interactive, accessible pages with
+              frameworks like tailwindcss ensuring a smooth user interface
+              across all devices.
+            </p>
+          </div> -->
+
+          <!-- <div class="services mb-7 lg:mb-0 mx-auto rounded-2xl p-5 ">
+            <h2 class="font-bold text-[var(--pry)] text-2xl">Native Application Development</h2>
+            <p class="p-0.5 text-[1rem]">
+              Native Application with React Native, Expo...
+            </p>
+          </div> -->
+        </div>
+      </section>
+      <!------------------------------------------- tools ------------------------------------------->
+      <section class="min-[650px]:p-5 mb-4 text-center">
+        <h1 class="mb-4 font-bold text-4xl">Tools</h1>
+        <div class="flex items-center gap-5 justify-center mb-5">
+          <img src="./html.png" alt="" width="90" height="40" />
+          <img src="./tailwindcss.png" alt="" width="150" height="40" />
+          <img src="./js.webp" alt="" width="90" height="40" />
+        </div>
+
+        <!-- <div class="flex items-center gap-12 justify-center">
+          <img src="./react.svg" alt="" width="90" height="40" />
+          <img src="./mysql.png" alt="" width="90" height="40" />
+          <img src="./php.png" alt="" width="90" height="40" />
+        </div> -->
+      </section>
+      <!------------------------------------------- Experience ------------------------------------------->
+      <section class="pt-10 " id="experience">
+        <h1 class="font-extrabold text-center text-3xl my-5 mb-2.5">
+          Experience
+        </h1>
+        <section class="min-[650px]:flex gap-9 min-[650px]:px-6 justify-center">
+          <div
+            class="py-5 max-sm:w-full grow mx-auto text-center justify-items-center rounded-2xl shadow shadow-purple-300">
+            <h2 class="font-bold text-[1.4rem] mb-5">Certicates</h2>
+            <div class="w-full flex flex-wrap gap-5">
+
+              <div class="cert-img relative text-center pb-2 mx-auto rounded-2xl">
+                <div id="certi-imgs"></div>
+                <h4 class="text-[1.2rem] font-bold" id="certi-titles"></h4>
+                <button type="button" class="absolute hidden top-[40%] left-2.5 bg-gray-600 font-semibold py-1 px-1 rounded-[5px] text-2xl" id="prevCerti">
+                  <img src="./next.png" alt="" width="30" class="rotate-180" />
+                </button>
+                <button type="button" class="absolute hidden cursor-pointer top-[40%] right-2.5 bg-purple-600 font-semibold py-1 px-1 rounded-[5px] text-2xl" id="nextCerti">
+                  <img src="./next.png" alt="" width="30" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gap-11 grow p-5 mx-auto rounded-2xl shadow shadow-purple-300 transition duration-300 ease-in-out hover:shadow-2xl">
+            <h2 class="max-sm:text-center font-bold text-[1.4rem] mb-5">
+              Experience Level and <br /><span class="text-[var(--pry)]">Completed Projects</span>
+            </h2>
+            <div class="pl-9 flex gap-5">
+              <div class="exp-lv">5+</div>
+              <div class="">
+                <span class="text-[.9rem]">Months</span><br />
+                <span class="exp text-[.9rem] mt-[-5px] inline-block">Experience</span>
+              </div>
+            </div>
+            <div class="pl-9 flex gap-5 mt-6">
+              <div class="exp-lv">8+</div>
+              <div class="">
+                <span class="text-[.9rem]">Completed</span><br />
+                <span class="exp text-[.9rem] mt-[-5px] inline-block"
+                  >Projects on devChallenges</span
+                >
+              </div>
+            </div>
+            <div class="pl-9 flex gap-5 mt-6">
+              <div class="exp-lv">2+</div>
+              <div class="">
+                <span class="text-[.9rem]">Completed</span><br />
+                <span class="exp text-[.9rem] mt-[-5px] inline-block"
+                  >Real Project</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <br /><br />
+      </section>
+
+      <!------------------------------------------- Portfolio ------------------------------------------->
+      <section class="pt-20  mx-auto overflow-x-hidden justify-items-center" id="portfolio">
+        <div class="portfolio overflow-x-hidden">
+          <h1 class="text-center font-bold text-4xl mb-2">Recent Projects</h1>
+          <h2 class="text-center font-bold text-[var(--pry)] text-3xl mb-5">Portfolio</h2>
+
+		      <!-- buttons -->
+          <ul class="flex gap-1 max-sm:w-[80%] pl-13 mx-auto items-center min-[650px]:gap-5 justify-center min-[650px]:font-semibold overflow-x-scroll">
+            <li>
+              <button type="button" class="bg-[var(--pry)]" id="allProj">
+                All
+              </button>
+            </li>
+            <li>
+              <button type="button" class="no-wrap" id="RD">
+                Responsive<span class="text-purple-50">_</span>Design
+              </button>
+            </li>
+            <li><button type="button" id="JS">JavaScript</button></li>
+            <li>
+              <button type="button" id="JS" class="bg-[var(--pry)] text-[#fff]">
+                <a href="https://github.com/Sparky-010?tab=repositories" target="_blank" rel="noopener noreferrer">More</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+         <!-- Responsive design-->
+         <br /><br class="max-sm:hidden" />
+
+         <div class="w-[90%] mx-auto flex max-sm:flex-wrap items-center justify-center gap-5 pb-5" id="rd">
+            <div class="projects max-sm:mb-5 rounded-2xl pb-2">
+               <a href="https://sparky-010.github.io/alarado-home/" target="_blank" rel="noopener noreferrer">
+                  <img src="./thumbnail.jpg" class="w-full h-full rounded-t-2xl" alt="alarado-home"/>
+               </a>
+
+               <div class="flex items-center px-2.5 pt-2 justify-between">
+                  <a href="https://sparky-010.github.io/alarado-home/" target="_blank" rel="noopener noreferrer">see project↗</a>
+                  <span class="text-gray-600">Responsive Design</span>
+               </div>
+               
+               <p class="my-2 mx-2.5 text-gray-600">
+                  Simple-Homepage-Alarado design, by <b>devchallenges</b>
+               </p>
+            </div>
+
+            <div class="projects max-sm:mb-5 rounded-2xl pb-2">
+               <a href="https://sparky-010.github.io/device-shop/" target="_blank" rel="noopener noreferrer">
+                  <img src="./device-checkout.jpg" class="w-full h-full rounded-t-2xl" alt="device-checkout"/>
+               </a>
+
+               <div class="flex items-center px-2.5 pt-2 justify-between">
+                  <a href="https://sparky-010.github.io/device-shop/" target="_blank" rel="noopener noreferrer">see project↗</a>
+                  <span class="text-gray-600">Responsive Design</span>
+               </div>
+               
+               <p class="my-2 mx-2.5 text-gray-600">
+                  Device Checkout design, by <b>devchallenges</b>
+               </p>
+            </div>
+         </div>
+
+         <!-- javascript -->
+          <!-- mmuock -->
+         <div class="w-[90%] mx-auto flex flex-wrap items-center justify-center gap-5 pb-5" id="js">
+            <div class="projects max-sm:mb-5 rounded-2xl pb-2">
+               <a href="https://ndev.page.gd/mmuock/" target="_blank" rel="noopener noreferrer">
+                  <img src="./timeCalendar.png" class="w-full h-full rounded-t-2xl" alt="Mmuock website"/>
+               </a>
+               <div class="flex items-center px-2.5 pt-2 justify-between">
+               <a href="https://ndev.page.gd/mmuock/" target="_blank" rel="noopener noreferrer">see project↗</a>
+               <span class="text-gray-600">JavaScript</span>
+               </div>
+               <p class="my-2 mx-2.5 text-gray-600">
+               Mmuock Time and Calendar website, by <b>Ndembeze</b>
+               </p>
+            </div>
+            <!-- nkmusic -->
+            <div class="projects max-sm:mb-5 rounded-2xl">
+            <a href="https://ndev.page.gd/music/" target="_blank" rel="noopener noreferrer">
+               <img src="./nkMusic.png" class="w-full h-[250px] rounded-t-2xl" alt="nkMusic" />
+            </a>
+            <div class="flex items-center px-2.5 pt-2 justify-between">
+               <a href="https://ndev.page.gd/music/" target="_blank" rel="noopener noreferrer">see project↗</a>
+               <span class="text-gray-600">JavaScript</span>
+            </div>
+            <p class="mx-2.5 my-2 text-gray-600">
+               NK Music App website, by <b>Ndembeze</b>
+            </p>
+         </div>
+        </div>
+        <br /><br class="max-sm:hidden" /><br class="max-sm:hidden" />
+      </section>
+
+      <!--------------------------------------Testimonials-------------------------------------->
+      <section class="w-[100%] py-[100px] min-[650px]:pt-[150px] mx-auto  shadow-[#fff]" id="feedback">
+        <h2 class="text-center font-bold text-4xl mb-10">Testimonials</h2>
+        <div class="p-5 lg:px-9 min-[650px]:flex justify-evenly mx-auto">
+          <div class="feed max-sm:mb-5 mx-auto rounded-2xl border-2 p-5">
+            <div class="feed-user flex gap-3">
+              <img src="./fav.png" alt="" width="60" class="border-2" />
+              <h4>
+                K̇alènda Mmuock ⭐⭐⭐⭐⭐<br /><span>Mmuock Njœé & K̇alènda </span>
+              </h4>
+            </div>
+            <p>
+              <i><b>Review from a user.</b></i> "I really enjoy the display of the website on my phone and laptop, the functionalities too are really impresive."<br>
+              <a href="https://ndev.page.gd/mmuock" target="_blank" class="text-blue-500">
+                <u>
+                  <i>See site</i>
+                </u>
+              </a>
+            </p>
+          </div>
+
+          <div class="feed mx-auto rounded-2xl border-2 p-5">
+            <div class="feed-user flex gap-3">
+              <img src="./images (2).jpeg" alt="" width="60" class="border-2" />
+              <h4>Fasoh Paul ⭐⭐⭐⭐<br /><span>Plumber</span></h4>
+            </div>
+            <p>
+              "I just wanted to say a big thank you for building my website. It
+              works perfectly on both mobile and desktop devices.
+            </p>
+          </div>
+
+          <!-- <div class="feed mx-auto rounded-2xl border-2 p-5">
+            <div class="feed-user flex gap-3">
+              <img src="./images (2).jpeg" alt="" width="60" class="border-2" />
+              <h4>Fasoh Paul ⭐⭐⭐⭐⭐<br /><span>E-Commerce</span></h4>
+            </div>
+            <p>
+              "The display, functionalities payment, order placement are really good and function properly."<br>
+              <a href="https://" target="_blank" class="text-blue-500">
+                <u>
+                  <i>See site</i>
+                </u>
+              </a>
+            </p>
+          </div> -->
+        </div>
+        <br /><br />
+      </section>
+
+      <!----------------------------------------futher studies--------------------------->
+      <section class="w-[100%] mx-auto bg-gray-500 shadow-[#fff]">
+        <h2 class="text-center font-bold text-2xl text-gray-300 pt-9">Studies</h2>
+        <p class="text-center text-[0.9rem] text-gray-800 font-semibold">I am currently studying and improving my skills on the following tools.</p>
+        <div class="p-5 w-fit flex justify-center gap-5 items-center mx-auto">
+          <!-- <img src="./react" alt=""> -->
+          <img src="./react.svg" alt="" width="55" class="border border-[var(--pry)] rounded-full p-1 bg-[var(--bg)]">
+          <img src="./php.png" alt="" width="55" class="border border-[var(--pry)] rounded-full p-1 bg-[var(--bg)]">
+          <img src="./mysql.png" alt="" width="55" class="border border-[var(--pry)] rounded-full p-1 bg-[var(--bg)]">
+          <img src="./wordpress.png" alt="" width="55" class="border border-[var(--pry)] rounded-full p-1 bg-[var(--bg)]">
+          </div>
+        </div>
+        <br /><br />
+      </section>
+
+      <!------------------------------------- contact -------------------------------------
+      <section id="contact" class="getInTouch pt-9 ">
+        <div class="min-[650px]:mb-9">
+          <h1 class="text-4xl font-bold text-center">
+            Contact
+            <span class="text-[var(--accent)] mb-5 text-shadow-2xs text-shadow-purple-900">Me.</span>
+          </h1>
+        </div>
+        <form action="" method="" class="w-full min-[650px]:w-[80%] p-5 py-9 rounded-[8px] getInTouch mx-auto">
+          <fieldset class="min-[650px]:w-[80%] min-[650px]:flex justify-between gap-11 mx-auto">
+            <div class="w-full text-center min-[650px]:text-right">
+              <input type="text" id="name" autocomplete="name" placeholder="Full Name" required />
+
+              <input type="email" id="email" autocomplete="email" placeholder="Email" required/>
+
+              <input type="tel" id="phone" autocomplete="tel" placeholder="Phone Number" required/>
+
+              <input type="text" id="subj" class="w-full" placeholder="Subject" required/>
+            </div>
+
+            <div class="w-full text-center min-[650px]:w-[80%]">
+              <textarea name="message" id="msg" class="block rounded-2xl w-full border mb-5 py-2.5 px-5" class="border" cols="35" rows="9" placeholder="Your Message"></textarea>
+
+              <button type="submit" class="send max-sm:w-full py-2 px-3 rounded-[7px] text-[var(--light-txt)] text-2xl font-bold bg-[var(--pry)]" id="subBtn">Send Message</button>
+            </div>
+          </fieldset>
+        </form>
+        <br /><br class="max-sm:hidden" /><br class="max-sm:hidden" />
+      </section> -->
+    </main>
+
+    <!------------------------------------------- footer ------------------------------------------->
+    <footer class="footer bg-gray-900" onclick="closeMenu()">
+      <ul class="foot">
+        <li>
+          <a href="#" class="flex items-center font-bold">
+            <span class="myL rounded-full px-2 border-2 text-[1.4rem] text-[var(--pry)]">N</span>
+         </a>
+        </li>
+        <li>
+          <a href="https://github.com/Sparky-010?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <img src="./git.png" alt="github" class="rounded-2xl" width="40">
+          </a>
+        </li>
+        <li>
+            <a href="https://devchallenges.io/profile/88c5cbd6-82ff-4c1b-94ba-105fdde53649" target="_blank" rel="noopener noreferrer">
+            <img src="./favicon.ico" alt="devChallenges" class="rounded-2xl" width="40">
+          </a>
+        </li>
+        <li>
+         <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank" rel="noopener noreferrer">
+            <img src="./linkedin.png" alt="linkedin" class="rounded-2xl" width="40">
+          </a>
+        </li>
+        <li>
+          <a href="https://" target="_blank" rel="noopener noreferrer">
+            <img src="./facebook.png" alt="facbook" class="rounded-2xl" width="40">
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/+237677191715" target="_blank" rel="noopener noreferrer">
+            <img src="./whatsapp.png" alt="whatsapp" class="rounded-2xl" width="40">
+          </a>
+        </li>
+        <li>
+			<a href="mailto:ndembezek@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img src="./gmail.png" alt="devChallenges" class="rounded-2xl" width="40">
+			</a>
+        </li>
+      </ul>
+      <p class="text-[grey] font-semibold pb-5">
+        <!-- <i><b>A L300 Digital Marketing student</b> at the <b>University of Bamenda; Cameroon.</b></i>
+            <br> -->
+        <i>&copy; Ndembeze Kangmoh | All Rights Reserved <span id="date"></span></i>
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
